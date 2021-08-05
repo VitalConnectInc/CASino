@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
     s.signing_key = sign_file
     s.cert_chain  = ['casino-public_cert.pem']
   end
-  s.add_runtime_dependency 'bigdecimal', '1.3.5'
+  s.add_runtime_dependency 'bigdecimal', '>= 1.3.5'
 
   s.add_development_dependency 'appraisal', '~> 2.2'
 
@@ -31,11 +31,11 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'grape', '>= 0.8'
   s.add_runtime_dependency 'grape-entity', '>= 0.4'
   s.add_runtime_dependency 'kaminari', '>= 1.1'
-  s.add_runtime_dependency 'rails', '>= 4.2'
+  s.add_runtime_dependency 'rails', '>= 6.1'
   s.add_runtime_dependency 'rotp', '>= 2.0'
-  s.add_runtime_dependency 'rqrcode', '~> 0.10.1'
+  s.add_runtime_dependency 'rqrcode', '>= 0.10.1'
   s.add_runtime_dependency 'rqrcode_png', '>= 0.1'
-  s.add_runtime_dependency 'sass-rails', '>= 4.0.0'
+  # s.add_runtime_dependency 'sass-rails', '>= 4.0.0'
   s.add_runtime_dependency 'terminal-table', '>= 1.4'
   s.add_runtime_dependency 'useragent', '>= 0.4'
 end
